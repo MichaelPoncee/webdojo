@@ -31,8 +31,16 @@ import { todayDate } from './utils'
 
 //acessar a pagina e renderizar para tela de notebook
 Cypress.Commands.add('start', () => {//inicia os testes
-    
+
     cy.visit('/')//visitando o site usando /, pois foi configurado na pasta cypress.config.js o site principal, e "/" = pagina principal
+})
+//visitando a pagina de cadastre-se clicando no link /register ao invés de clicar no botão
+Cypress.Commands.add('gotoSignup', () => {
+     cy.visit('/')
+    cy.get('a[href="/register"')
+        .click()
+    cy.contains('h2', 'Crie sua conta')
+        .should('be.visible')
 })
 //preencher o login e senha
 Cypress.Commands.add('submitLoginForm', (email, senha) => {//faz o login no sistema
