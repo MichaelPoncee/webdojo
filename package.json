@@ -1,0 +1,20 @@
+{
+  "name": "webdojo",
+  "version": "1.0.0",
+  "description": "![WebDojo Cover](.github/cover.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichaelPoncee/webdojo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MichaelPoncee/webdojo/issues"
+  },
+  "homepage": "https://github.com/MichaelPoncee/webdojo#readme"
+}
